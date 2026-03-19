@@ -1,0 +1,8 @@
+[phases.install]
+cmds = ["pip install python-dotenv fastapi fastmcp google-api-python-client google-auth-httplib2 google-auth-oauthlib httpx py-key-value-aio pyjwt pyyaml cryptography defusedxml"]
+
+[phases.build]
+cmds = []
+
+[start]
+cmd = "python main.py --transport streamable-http"
